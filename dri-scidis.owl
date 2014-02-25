@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/drinventor/scidoc"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://purl.org/drinventor/scidoc">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Import>http://www.hozo.jp/owl/EXPOApr19.xml/</Import>
+    <Import>http://purl.org/spar/deo</Import>
+    <Declaration>
+        <Class IRI="#Background"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscourseElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Method"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScientificDiscourse"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Background"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Conclusion"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Goal"/>
+        <Class IRI="http://www.hozo.jp/owl/EXPOApr19.xml/Goal"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Method"/>
+        <Class IRI="http://purl.org/spar/deo/Methods"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Motivation"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Result"/>
+        <Class IRI="http://purl.org/spar/deo/Results"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Background"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conclusion"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiscourseElements"/>
+        <Class IRI="#ScientificDiscourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goal"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypothesis"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Method"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motivation"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Result"/>
+        <Class IRI="#DiscourseElements"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&xsd;string">A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Motivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
