@@ -1,4 +1,4 @@
-drinventor
+DrInventor
 ==========
 
 Scientific discourse ontology
@@ -6,8 +6,9 @@ Scientific discourse ontology
 This ontology  establishes the classes to annotate scientific documents according to their scientific discourse elements. 
 This ontology is developed under the FP-7 European Project Dr Inventor (http://drinventor.eu/)
 
-status
+Status
 =======
+The Scientific discourse ontology is under construction
 
 License
 =======
