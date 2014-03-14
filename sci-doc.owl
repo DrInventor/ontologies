@@ -10,20 +10,32 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/almudenaris/drinventor/blob/master/scientificDiscourse.owl"
+     xml:base="http://purl.org/drinventor/sci-doc"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="https://github.com/almudenaris/drinventor/blob/master/scientificDiscourse.owl">
+     ontologyIRI="http://purl.org/drinventor/sci-doc">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sci-doc" IRI="https://github.com/almudenaris/drinventor/blob/master/scientificDiscourse.owl"/>
     <Import>http://purl.org/spar/deo</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology  establishes the classes to annotate scientific documents according to their scientific discourse elemnts</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0.1</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#Background"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommonGround"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Conclusion"/>
@@ -47,6 +59,9 @@
         <Class IRI="#Hypothesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Limitations"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Method"/>
     </Declaration>
     <Declaration>
@@ -62,50 +77,67 @@
         <Class IRI="#Observation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Other"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelatedWork"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Result"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ScientificDiscourse"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="http://purl.org/spar/deo/Data"/>
-        <Class IRI="#Observation"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.org/spar/deo/FutureWork"/>
-        <Class IRI="#FutureWork"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.org/spar/deo/Methods"/>
-        <Class IRI="#Method"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="http://purl.org/spar/deo/Results"/>
-        <Class IRI="#Result"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
+        <Class IRI="#Background"/>
         <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
-        <Class IRI="#Background"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
         <Class IRI="#Conclusion"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
         <Class IRI="#Contribution"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Discussion"/>
         <Class IRI="#Discussion"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Discussion"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+        <Class IRI="#FutureWork"/>
+        <Class IRI="http://purl.org/spar/deo/FutureWork"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Method"/>
+        <Class IRI="http://purl.org/spar/deo/Methods"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Motivation"/>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Observation"/>
+        <Class IRI="http://purl.org/spar/deo/Data"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProblemStatement"/>
+        <Class IRI="http://purl.org/spar/deo/ProblemStatement"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Result"/>
+        <Class IRI="http://purl.org/spar/deo/Results"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Background"/>
         <Class IRI="#ScientificDiscourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommonGround"/>
+        <Class IRI="#Background"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Conclusion"/>
@@ -136,12 +168,16 @@
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Limitations"/>
+        <Class IRI="#Conclusion"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Method"/>
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Model"/>
-        <Class IRI="#ScientificDiscourse"/>
+        <Class IRI="#Other"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Motivation"/>
@@ -149,11 +185,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Object"/>
-        <Class IRI="#ScientificDiscourse"/>
+        <Class IRI="#Other"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Observation"/>
+        <Class IRI="#Other"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProblemStatement"/>
         <Class IRI="#ScientificDiscourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelatedWork"/>
+        <Class IRI="#Background"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelatedWork"/>
+        <Class IRI="http://purl.org/spar/deo/RelatedWork"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Result"/>
@@ -162,32 +210,160 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Background</IRI>
-        <Literal datatypeIRI="&xsd;string">Generally accepted background knowledge and previous work</Literal>
+        <Literal datatypeIRI="&xsd;string">Theoterical information about the domain.
+
+According to the annotation scheme proposed by Liakata et. al 2008, generally accepted background knowledge and previous work  accepted background knowledge and previous work.
+
+According to [DEO] ontology: Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Background</IRI>
+        <Literal datatypeIRI="&xsd;string">Background</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Background</IRI>
+        <Literal datatypeIRI="&xsd;string">Liakata et al. 2008, Liakata, M., Teufel, S., Siddharthan, A., &amp; Batchelor, C. R. (2010, May). Corpora for the Conceptualisation and Zoning of Scientific Papers. In LREC.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Background</IRI>
+        <Literal datatypeIRI="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#CommonGround</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Knowloedge that is known by everyone in the domain. According to [Teufel 2010] Common Ground is defined as &quot;no knowledge claim raised&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommonGround</IRI>
+        <Literal datatypeIRI="&xsd;string">CommonGround</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CommonGround</IRI>
+        <Literal datatypeIRI="&xsd;string">[Teufel 2010] The Structure of Scientific Articles: Applications to Citation Indexing and Summarization
+Simone Teufel (University of Cambridge)
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Conclusion</IRI>
-        <Literal datatypeIRI="&xsd;string">A conclusion of an investigation is a statement summarising the contribution of the investigation, inferred from observations, results, assumptions, and other facts.</Literal>
+        <Literal datatypeIRI="&xsd;string">The most important take-home message of the study.
+
+According to [Liakata 2008], conclusions are statements inferred from observations and results, which support or reject a research hypothesis or summarise the findings of an investigation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Conclusion</IRI>
+        <Literal datatypeIRI="&xsd;string">Conclusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Conclusion</IRI>
+        <Literal datatypeIRI="&xsd;string">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Contribution</IRI>
+        <Literal datatypeIRI="&xsd;string">Indicates why the work is important.
+
+The Deo ontology [DEO] defines contribution as a description of the part that this publication plays in the overall field.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contribution</IRI>
+        <Literal datatypeIRI="&xsd;string">Contribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Contribution</IRI>
+        <Literal datatypeIRI="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Discussion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">As stated in Deo [DEO], discussion is an interpretation of the results obtained and an analysis of their significance, in support of conclusions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Discussion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Discussion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Discussion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Experiment</IRI>
-        <Literal datatypeIRI="&xsd;string">Experiment details</Literal>
+        <Literal datatypeIRI="&xsd;string">How the study was structured and how it was carried out (experimental setup, metrics and details)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Experiment</IRI>
+        <Literal datatypeIRI="&xsd;string">Experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#FutureWork</IRI>
+        <Literal datatypeIRI="&xsd;string">The perspective of the work. Suggestions about how to improve the work (own or general)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FutureWork</IRI>
+        <Literal datatypeIRI="&xsd;string">FutureWork</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Goal</IRI>
-        <Literal datatypeIRI="&xsd;string">A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc</Literal>
+        <Literal datatypeIRI="&xsd;string">According to [Liakata 2008]: A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&xsd;string">Goal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Goal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Hypothesis</IRI>
-        <Literal datatypeIRI="&xsd;string">A statement about the given information and assumptions as well as the expected conclusions in the context of a study, investigation or model</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A hypothesis is an educated guess about how things work. A hypothesis should be something that you can test.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#Limitations</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Limitations of the author&apos;s work
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Limitations</IRI>
+        <Literal datatypeIRI="&xsd;string">Limitations</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Method</IRI>
-        <Literal datatypeIRI="&xsd;string">Means by which authors seek to achieve a goal of the investigation</Literal>
+        <Literal datatypeIRI="&xsd;string">How the author performed the experiment. Technique/s used to achieve the goal/s.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Method</IRI>
+        <Literal datatypeIRI="&xsd;string">Method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -197,12 +373,22 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Motivation</IRI>
-        <Literal datatypeIRI="&xsd;string">The reason for carrying out the investigation</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The stimulus for achieving the goal of the investigation, the reason to carry out the investigation [Liakata 2008]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Motivation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Object</IRI>
-        <Literal datatypeIRI="&xsd;string">An entity which is a product or main theme of the investigation</Literal>
+        <Literal datatypeIRI="&xsd;string">An entity which is a product or main theme of the investigation [EXPO]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Object</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This is the main topic (object that is being studied). For example, 3d modelling of ears, face recognition, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -211,8 +397,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ProblemStatement</IRI>
+        <Literal datatypeIRI="&xsd;string">States a specific research question.
+Deo ontology [DEO] defines this class as a concise description of the issues that needed to be addressed by a work described in the document.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProblemStatement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ProblemStatement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ProblemStatement</IRI>
+        <Literal datatypeIRI="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#RelatedWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Work done by others in the same domain, this includes also the related work of the author&apos;s own work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RelatedWork</IRI>
+        <Literal datatypeIRI="&xsd;string">RelatedWork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Result</IRI>
-        <Literal datatypeIRI="&xsd;string">Results of the investigation are the set of facts, obtained through the interpretation of observations</Literal>
+        <Literal datatypeIRI="&xsd;string">Data collected during experimentation.
+
+According to Deo ontology definition[DEO] : The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Result</IRI>
+        <Literal datatypeIRI="&xsd;string">Result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Result</IRI>
+        <Literal datatypeIRI="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#ScientificDiscourse</IRI>
+        <Literal datatypeIRI="&xsd;string">Classes related to the scientific discourse elements</Literal>
     </AnnotationAssertion>
 </Ontology>
 
