@@ -26,7 +26,7 @@
     <Import>http://purl.org/spar/deo</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology  establishes the classes to annotate scientific documents according to their scientific discourse elemnts</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology  establishes the classes for annotating scientific documents according to their scientific discourse elemnts</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
@@ -66,19 +66,7 @@
         <Class IRI="#Method"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Model"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Motivation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Observation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Other"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProblemStatement"/>
@@ -119,10 +107,6 @@
     <EquivalentClasses>
         <Class IRI="#Motivation"/>
         <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Observation"/>
-        <Class IRI="http://purl.org/spar/deo/Data"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ProblemStatement"/>
@@ -177,20 +161,8 @@
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Model"/>
-        <Class IRI="#Other"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Motivation"/>
         <Class IRI="#ScientificDiscourse"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Object"/>
-        <Class IRI="#Other"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Observation"/>
-        <Class IRI="#Other"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProblemStatement"/>
@@ -368,11 +340,6 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#Model</IRI>
-        <Literal datatypeIRI="&xsd;string">A statement about a theoretical model or framework</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Motivation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The stimulus for achieving the goal of the investigation, the reason to carry out the investigation [Liakata 2008]</Literal>
     </AnnotationAssertion>
@@ -380,21 +347,6 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Motivation</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#Object</IRI>
-        <Literal datatypeIRI="&xsd;string">An entity which is a product or main theme of the investigation [EXPO]</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Object</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This is the main topic (object that is being studied). For example, 3d modelling of ears, face recognition, etc.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#Observation</IRI>
-        <Literal datatypeIRI="&xsd;string">The data/phenomena recorded within an investigation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
