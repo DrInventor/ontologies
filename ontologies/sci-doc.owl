@@ -32,6 +32,10 @@
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">0.1</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">Almudena Ruiz-Iniesta</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="#Background"/>
     </Declaration>
