@@ -29,12 +29,24 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">This ontology  establishes the classes for annotating scientific documents according to their scientific discourse elemnts</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&xsd;string">2014-03-14</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="&xsd;string">Scientific Discourse Ontology</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">0.1</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
         <Literal datatypeIRI="&xsd;string">Almudena Ruiz-Iniesta</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Background"/>
@@ -83,6 +95,78 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ScientificDiscourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/FutureWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/Methods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/ProblemStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/RelatedWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/spar/deo/Results"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Discussion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="#Background"/>
@@ -184,6 +268,109 @@
         <Class IRI="#Result"/>
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/FutureWork"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/Methods"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/Model"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/ProblemStatement"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/RelatedWork"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/spar/deo/Results"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Discussion"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+        <Class IRI="http://purl.org/spar/deo/DiscourseElement"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://purl.org/dc/terms/relation"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+    </TransitiveObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A related resource that is included either physically or logically in the described resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/hasPart</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A related resource in which the described resource is physically or logically included.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/isPartOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">is part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/dc/terms/relation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A related resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/dc/terms/relation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">has relation</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#Background</IRI>
@@ -401,6 +588,126 @@ According to Deo ontology definition[DEO] : The report of the specific findings 
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
         <IRI>#ScientificDiscourse</IRI>
         <Literal datatypeIRI="&xsd;string">Classes related to the scientific discourse elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/DiscourseElement</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An element of a document that carries out a rhetorical function.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/DiscourseElement</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">discourse element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/FutureWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A proposal for new investigation to be undertaken in order to continue and advance the work described in the publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/FutureWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">future work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled &apos;Methods and Materials&apos;, &apos;Experimental&apos; or a related term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/Methods</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/Model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A description of a model used or produced by the work described in the publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/Model</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://purl.org/spar/deo/ProblemStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A concise description of the issues that needed to be addressed by a work described in the document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/ProblemStatement</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">problem statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/RelatedWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The authors&apos; critical review of current knowledge by specific reference to others&apos; work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/RelatedWork</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">related work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/spar/deo/Results</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.org/spar/deo/Results</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">results</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Background</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Background</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">background</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Conclusion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Conclusion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">conclusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Contribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A description of the part that this publication plays in the overall field.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Contribution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Discussion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Discussion</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">discussion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Motivation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A description of the justification for undertaking the work described in the publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://salt.semanticauthoring.org/ontologies/sro#Motivation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">motivation</Literal>
     </AnnotationAssertion>
 </Ontology>
 
