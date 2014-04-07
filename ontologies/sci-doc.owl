@@ -82,7 +82,13 @@
         <Class IRI="#Method"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Motivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProblemStatement"/>
@@ -193,6 +199,10 @@
         <Class IRI="http://purl.org/spar/deo/Methods"/>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#Model"/>
+        <Class IRI="http://purl.org/spar/deo/Model"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Motivation"/>
         <Class IRI="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
     </EquivalentClasses>
@@ -249,7 +259,15 @@
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="#ScientificDiscourse"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Motivation"/>
+        <Class IRI="#ScientificDiscourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observation"/>
         <Class IRI="#ScientificDiscourse"/>
     </SubClassOf>
     <SubClassOf>
