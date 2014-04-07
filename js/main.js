@@ -4,7 +4,7 @@ var ToC =
 
 var newLine, el, title, link;
 
-$("article h2").each(function() {
+$("article h2 li").each(function() {
 
   el = $(this);
   title = el.text();

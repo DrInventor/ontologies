@@ -212,3 +212,12 @@ color:green;
 	font-style: normal;
 	text-align: center;
 }
+
+/* style for namespace declaration */
+#name-dec{
+	text-align: left;
+	color: #005A9C;
+	background: white;
+	font: 140% sans-serif;
+	border-bottom: none;
+}
