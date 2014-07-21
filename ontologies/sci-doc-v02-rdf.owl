@@ -255,7 +255,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/agreesWith">
         <rdfs:label xml:lang="en">agrees with</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity agrees with statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -265,8 +267,10 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/cites">
         <rdfs:label xml:lang="en">cites</rdfs:label>
         <rdfs:comment xml:lang="en">A statement that the citing entity cites the cited entity, either directly and explicitly (as in the reference list of a journal article), indirectly (e.g. by citing a more recent paper by the same group on the same topic), or implicitly (e.g. as in artistic quotations or parodies, or in cases of plagiarism).</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <inverseOf rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -276,7 +280,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsAuthority">
         <rdfs:label xml:lang="en">cites as authority</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as one that provides an authoritative description or definition of the subject under discussion.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -286,7 +292,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsDataSource">
         <rdfs:label xml:lang="en">cites as data source</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as source of data.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -296,7 +304,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsEvidence">
         <rdfs:label xml:lang="en">cites as evidence</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as source of factual evidence for statements it contains.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -306,7 +316,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsMetadataDocument">
         <rdfs:label xml:lang="en">cites as metadata document</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as being the container of metadata describing the citing entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -316,7 +328,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsPotentialSolution">
         <rdfs:label xml:lang="en">cites as potential solution</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as providing or containing a possible solution to the issues being discussed.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -326,7 +340,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsRecommendedReading">
         <rdfs:label xml:lang="en">cites as recommended reading</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as an item of recommended reading.  This property can be used, for example, to describe references in a lecture reading list, where the cited references are relevant to the general topic of the lecture, but might not be individually cited within the text of the lecture.  Similarly, it could be used to describe items in a &apos;Suggested further reading&apos; list at the end of a book chapter.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -336,7 +352,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsRelated">
         <rdfs:label xml:lang="en">cites as related</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as one that is related.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -346,7 +364,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesAsSourceDocument">
         <rdfs:label xml:lang="en">cites as source document</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as being the entity from which the citing entity is derived, or about which the citing entity contains metadata.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -356,7 +376,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/citesForInformation">
         <rdfs:label xml:lang="en">cites for information</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity cites the cited entity as a source of information on the subject under discussion.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -367,7 +389,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
         <rdfs:label xml:lang="en">compiles</rdfs:label>
         <dc:description xml:lang="en">Note: This property has been imported from the CiTO4Data ontology, usage of which has been deprecated.</dc:description>
         <rdfs:comment xml:lang="en">The citing entity is used to create or compile the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -377,7 +401,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/confirms">
         <rdfs:label xml:lang="en">confirms</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity confirms facts, ideas or statements presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -387,7 +413,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/containsAssertionFrom">
         <rdfs:label xml:lang="en">contains assertion from</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity contains a statement of fact or a logical assertion (or a collection of such facts and/or assertions) originally present in the cited entity.   This object property is designed to be used to relate a separate abstract, summary or nanopublication to the cited entity upon which it is based.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -397,7 +425,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/corrects">
         <rdfs:label xml:lang="en">corrects</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity corrects statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -407,7 +437,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/credits">
         <rdfs:label xml:lang="en">credits</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity acknowledges contributions made by the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -417,7 +449,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/critiques">
         <rdfs:label xml:lang="en">critiques</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity critiques statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -427,7 +461,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/derides">
         <rdfs:label xml:lang="en">derides</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity express contempt for the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -437,8 +473,10 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/describes">
         <rdfs:label xml:lang="en">describes</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity describes the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
         <inverseOf rdf:resource="http://purl.org/spar/cito/isDescribedBy"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -448,7 +486,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/disagreesWith">
         <rdfs:label xml:lang="en">disagrees with</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity disagrees with statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -458,7 +498,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/discusses">
         <rdfs:label xml:lang="en">discusses</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity discusses statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -468,7 +510,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/disputes">
         <rdfs:label xml:lang="en">disputes</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity disputes statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -478,7 +522,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/documents">
         <rdfs:label xml:lang="en">documents</rdfs:label>
         <rdfs:comment>The citing entity documents information about the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -488,7 +534,9 @@ It imports the next ontologies: DEO and CiTO </dc:description>
     <ObjectProperty rdf:about="http://purl.org/spar/cito/extends">
         <rdfs:label xml:lang="en">extends</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity extends facts, ideas or understandings presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -538,8 +586,10 @@ Oxton 01578
 
 is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directory.</dc:description>
         <rdfs:comment xml:lang="en">The citing entity includes one or more excerpts from the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
         <inverseOf rdf:resource="http://purl.org/spar/cito/providesExcerptFor"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -552,7 +602,9 @@ is an excerpt from the UK Dialling Codes section of the Oxford Telephone Directo
 
 On June 4th 1940, Winston Churchill made a speech on the radio that has since become famous, that included the words: &quot; . . . we shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender . . .&quot;</dc:description>
         <rdfs:comment xml:lang="en">The citing entity includes one or more quotations from the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -659,6 +711,7 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <!-- http://purl.org/spar/cito/isCitedBy -->
 
     <ObjectProperty rdf:about="http://purl.org/spar/cito/isCitedBy">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
         <rdfs:label xml:lang="en">is cited by</rdfs:label>
         <rdfs:comment xml:lang="en">A statement of fact that the cited entity (the subject of the triple) is cited by the citing entity (the object of the triple).</rdfs:comment>
     </ObjectProperty>
@@ -932,7 +985,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/obtainsBackgroundFrom">
         <rdfs:label xml:lang="en">obtains background from</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity obtains background information from the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -942,7 +997,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/obtainsSupportFrom">
         <rdfs:label xml:lang="en">obtains support from</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity obtains intellectual or factual support from the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -952,7 +1009,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/parodies">
         <rdfs:label xml:lang="en">parodies</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity imitates the characteristic style or content of the cited entity for comic effect, usually without explicit citation.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -962,7 +1021,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/plagiarizes">
         <rdfs:label xml:lang="en">plagiarizes</rdfs:label>
         <rdfs:comment xml:lang="en">The author of the citing entity plagiarizes the cited entity, by including textual or other elements from the cited entity without formal acknowledgement of their source.  The citing entity thus contains no explicit citation of the cited entity, according to the norms of scholarly practice, but cites it implicitly.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1036,7 +1097,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/qualifies">
         <rdfs:label xml:lang="en">qualifies</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity qualifies or places conditions or restrictions upon statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1046,7 +1109,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/refutes">
         <rdfs:label xml:lang="en">refutes</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity refutes statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1056,8 +1121,10 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/repliesTo">
         <rdfs:label xml:lang="en">replies to</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity replies to statements, ideas or criticisms presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
         <inverseOf rdf:resource="http://purl.org/spar/cito/hasReply"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1067,7 +1134,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/retracts">
         <rdfs:label xml:lang="en">retracts</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity constitutes a formal retraction of the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1077,7 +1146,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/reviews">
         <rdfs:label xml:lang="en">reviews</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity reviews statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1087,7 +1158,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/ridicules">
         <rdfs:label xml:lang="en">ridicules</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity ridicules the cited entity or aspects of its contents.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1095,9 +1168,10 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <!-- http://purl.org/spar/cito/sharesAuthorsWith -->
 
     <ObjectProperty rdf:about="http://purl.org/spar/cito/sharesAuthorsWith">
-        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
         <rdfs:label xml:lang="en">shares authors with</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity has at least one author in common with the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </ObjectProperty>
     
@@ -1108,7 +1182,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/speculatesOn">
         <rdfs:label xml:lang="en">speculates on</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity speculates on something within the cited entity, without firm evidence.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1118,7 +1194,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/supports">
         <rdfs:label xml:lang="en">supports</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity provides intellectual or factual support for statements, ideas or conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1128,7 +1206,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/updates">
         <rdfs:label xml:lang="en">updates</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity updates statements, ideas, hypotheses or understanding presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1138,8 +1218,10 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/usesConclusionsFrom">
         <rdfs:label xml:lang="en">uses conclusions from</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity describes work that uses conclusions presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
         <inverseOf rdf:resource="http://purl.org/spar/cito/providesConclusionsFor"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1149,7 +1231,9 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/usesDataFrom">
         <rdfs:label xml:lang="en">uses data from</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity describes work that uses data presented in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
@@ -1159,14 +1243,19 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <ObjectProperty rdf:about="http://purl.org/spar/cito/usesMethodIn">
         <rdfs:label xml:lang="en">uses method in</rdfs:label>
         <rdfs:comment xml:lang="en">The citing entity describes work that uses a method detailed in the cited entity.</rdfs:comment>
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/spar/cito/cites"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
     </ObjectProperty>
     
 
 
     <!-- http://purl.org/swan/2.0/discourse-relationships/refersTo -->
 
-    <ObjectProperty rdf:about="http://purl.org/swan/2.0/discourse-relationships/refersTo"/>
+    <ObjectProperty rdf:about="http://purl.org/swan/2.0/discourse-relationships/refersTo">
+        <rdfs:range rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </ObjectProperty>
     
 
 
@@ -1216,14 +1305,15 @@ On June 4th 1940, Winston Churchill made a speech on the radio that has since be
     <Class rdf:about="&sci-doc;Background">
         <rdfs:label rdf:datatype="&xsd;string">Background</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <disjointWith rdf:resource="&sci-doc;Conclusion"/>
         <rdfs:seeAlso rdf:datatype="&xsd;string">Liakata et al. 2008, Liakata, M., Teufel, S., Siddharthan, A., &amp; Batchelor, C. R. (2010, May). Corpora for the Conceptualisation and Zoning of Scientific Papers. In LREC.</rdfs:seeAlso>
-        <dc:description rdf:datatype="&xsd;string">Theoterical information about the domain.
+        <rdfs:comment rdf:datatype="&xsd;string">Theoterical information about the domain.
 
 According to the annotation scheme proposed by Liakata et. al 2008, generally accepted background knowledge and previous work  accepted background knowledge and previous work.
 
 According to [DEO] ontology: Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.
 
-</dc:description>
+</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
     </Class>
     
@@ -1234,10 +1324,11 @@ According to [DEO] ontology: Presentation of information that is essential for u
     <Class rdf:about="&sci-doc;CommonGround">
         <rdfs:label rdf:datatype="&xsd;string">CommonGround</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;Background"/>
+        <disjointWith rdf:resource="&sci-doc;RelatedWork"/>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[Teufel 2010] The Structure of Scientific Articles: Applications to Citation Indexing and Summarization
 Simone Teufel (University of Cambridge)
 </rdfs:seeAlso>
-        <dc:description>Knowloedge that is known by everyone in the domain. According to [Teufel 2010] Common Ground is defined as &quot;no knowledge claim raised&quot;.</dc:description>
+        <rdfs:comment>Knowloedge that is known by everyone in the domain. According to [Teufel 2010] Common Ground is defined as &quot;no knowledge claim raised&quot;.</rdfs:comment>
     </Class>
     
 
@@ -1247,9 +1338,9 @@ Simone Teufel (University of Cambridge)
     <Class rdf:about="&sci-doc;Conclusion">
         <rdfs:label rdf:datatype="&xsd;string">Conclusion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">The most important take-home message of the study.
+        <rdfs:comment rdf:datatype="&xsd;string">The most important take-home message of the study.
 
-According to [Liakata 2008], conclusions are statements inferred from observations and results, which support or reject a research hypothesis or summarise the findings of an investigation.</dc:description>
+According to [Liakata 2008], conclusions are statements inferred from observations and results, which support or reject a research hypothesis or summarise the findings of an investigation.</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
     </Class>
     
@@ -1260,9 +1351,9 @@ According to [Liakata 2008], conclusions are statements inferred from observatio
     <Class rdf:about="&sci-doc;Contribution">
         <rdfs:label rdf:datatype="&xsd;string">Contribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">Indicates why the work is important.
+        <rdfs:comment rdf:datatype="&xsd;string">Indicates why the work is important.
 
-The Deo ontology [DEO] defines contribution as a description of the part that this publication plays in the overall field.</dc:description>
+The Deo ontology [DEO] defines contribution as a description of the part that this publication plays in the overall field.</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
     </Class>
     
@@ -1271,9 +1362,9 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <!-- http://purl.org/drinventor/sci-doc#Discussion -->
 
     <Class rdf:about="&sci-doc;Discussion">
-        <rdfs:label>Discussion</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Discussion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description>As stated in Deo [DEO], discussion is an interpretation of the results obtained and an analysis of their significance, in support of conclusions.</dc:description>
+        <rdfs:comment>As stated in Deo [DEO], discussion is an interpretation of the results obtained and an analysis of their significance, in support of conclusions.</rdfs:comment>
         <rdfs:seeAlso>[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
     </Class>
     
@@ -1284,7 +1375,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;Experiment">
         <rdfs:label rdf:datatype="&xsd;string">Experiment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">How the study was structured and how it was carried out (experimental setup, metrics and details)</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">How the study was structured and how it was carried out (experimental setup, metrics and details)</rdfs:comment>
     </Class>
     
 
@@ -1294,7 +1385,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;FutureWork">
         <rdfs:label rdf:datatype="&xsd;string">FutureWork</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">The perspective of the work. Suggestions about how to improve the work (own or general)</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">The perspective of the work. Suggestions about how to improve the work (own or general)</rdfs:comment>
     </Class>
     
 
@@ -1304,7 +1395,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;Goal">
         <rdfs:label rdf:datatype="&xsd;string">Goal</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">According to [Liakata 2008]: A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc.</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">According to [Liakata 2008]: A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc.</rdfs:comment>
         <rdfs:seeAlso>[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
     </Class>
     
@@ -1315,7 +1406,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;Hypothesis">
         <rdfs:label>Hypothesis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description>A hypothesis is an educated guess about how things work. A hypothesis should be something that you can test.</dc:description>
+        <rdfs:comment>A hypothesis is an educated guess about how things work. A hypothesis should be something that you can test.</rdfs:comment>
     </Class>
     
 
@@ -1325,8 +1416,8 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;Limitations">
         <rdfs:label rdf:datatype="&xsd;string">Limitations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;Conclusion"/>
-        <dc:description>Limitations of the author&apos;s work
-</dc:description>
+        <rdfs:comment>Limitations of the author&apos;s work
+</rdfs:comment>
     </Class>
     
 
@@ -1336,7 +1427,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;Method">
         <rdfs:label rdf:datatype="&xsd;string">Method</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">How the author performed the experiment. Technique/s used to achieve the goal/s.</dc:description>
+        <rdfs:comment rdf:datatype="&xsd;string">How the author performed the experiment. Technique/s used to achieve the goal/s.</rdfs:comment>
     </Class>
     
 
@@ -1344,8 +1435,9 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <!-- http://purl.org/drinventor/sci-doc#Model -->
 
     <Class rdf:about="&sci-doc;Model">
+        <rdfs:label rdf:datatype="&xsd;string">Model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description>A statement about a theoretical model or framework</dc:description>
+        <rdfs:comment>A statement about a theoretical model or framework</rdfs:comment>
     </Class>
     
 
@@ -1354,7 +1446,7 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
 
     <Class rdf:about="&sci-doc;Motivation">
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description>The stimulus for achieving the goal of the investigation, the reason to carry out the investigation [Liakata 2008]</dc:description>
+        <rdfs:comment>The stimulus for achieving the goal of the investigation, the reason to carry out the investigation [Liakata 2008]</rdfs:comment>
         <rdfs:seeAlso>[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
     </Class>
     
@@ -1363,8 +1455,9 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <!-- http://purl.org/drinventor/sci-doc#Observation -->
 
     <Class rdf:about="&sci-doc;Observation">
+        <rdfs:label rdf:datatype="&xsd;string">Observation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description>The data/phenomena recorded within an investigation</dc:description>
+        <rdfs:comment>The data/phenomena recorded within an investigation</rdfs:comment>
     </Class>
     
 
@@ -1374,10 +1467,10 @@ The Deo ontology [DEO] defines contribution as a description of the part that th
     <Class rdf:about="&sci-doc;ProblemStatement">
         <rdfs:label>ProblemStatement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">States a specific research question.
+        <rdfs:comment rdf:datatype="&xsd;string">States a specific research question.
 Deo ontology [DEO] defines this class as a concise description of the issues that needed to be addressed by a work described in the document.
 
-</dc:description>
+</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
     </Class>
     
@@ -1388,7 +1481,7 @@ Deo ontology [DEO] defines this class as a concise description of the issues tha
     <Class rdf:about="&sci-doc;RelatedWork">
         <rdfs:label rdf:datatype="&xsd;string">RelatedWork</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;Background"/>
-        <dc:description>Work done by others in the same domain, this includes also the related work of the author&apos;s own work.</dc:description>
+        <rdfs:comment>Work done by others in the same domain, this includes also the related work of the author&apos;s own work.</rdfs:comment>
     </Class>
     
 
@@ -1398,9 +1491,9 @@ Deo ontology [DEO] defines this class as a concise description of the issues tha
     <Class rdf:about="&sci-doc;Result">
         <rdfs:label rdf:datatype="&xsd;string">Result</rdfs:label>
         <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
-        <dc:description rdf:datatype="&xsd;string">Data collected during experimentation.
+        <rdfs:comment rdf:datatype="&xsd;string">Data collected during experimentation.
 
-According to Deo ontology definition[DEO] : The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</dc:description>
+According to Deo ontology definition[DEO] : The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</rdfs:comment>
         <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
     </Class>
     
