@@ -23,14 +23,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:sci-doc="http://purl.org/drinventor/sci-doc#"
      xmlns:deo="http://purl.org/spar/deo#">
-    <Ontology rdf:about="http://purl.org/drinventor/sci-doc">
+    <owl:Ontology rdf:about="http://purl.org/drinventor/sci-doc">
         <dc:creator rdf:datatype="&xsd;string">Almudena Ruiz-Iniesta</dc:creator>
         <dc:rights rdf:datatype="&xsd;string">This work is licensed under a http://creativecommons.org/licenses/by-nc/4.0/ Creative Commons Attribution-NonCommercial 4.0 International License</dc:rights>
         <versionInfo>0.1</versionInfo>
         <dc:description>This ontology establishes the classes to annotate scientific documents according to their scientific discourse elements.
 It imports the next ontologies: DEO and CiTO </dc:description>
         <versionIRI rdf:resource="https://raw.github.com/almudenaris/drinventor/master/sci-doc.owl"/>
-    </Ontology>
+    </owl:Ontology>
     
 
 

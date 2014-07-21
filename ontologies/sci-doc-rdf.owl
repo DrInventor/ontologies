@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY deo "http://purl.org/spar/deo#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY sci-doc "http://purl.org/drinventor/sci-doc#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sci-doc="http://purl.org/drinventor/sci-doc#"
+     xmlns:deo="http://purl.org/spar/deo#">
+    <owl:Ontology rdf:about="http://purl.org/drinventor/sci-doc">
+        <dc:date rdf:datatype="&xsd;string">2014-03-14</dc:date>
+        <dc:creator rdf:datatype="&xsd;string">Almudena Ruiz-Iniesta</dc:creator>
+        <dc:title rdf:datatype="&xsd;string">Scientific Discourse Ontology</dc:title>
+        <dc:description>This ontology  establishes the classes for annotating scientific documents according to their scientific discourse elemnts</dc:description>
+        <versionInfo>0.1</versionInfo>
+        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
+        <imports rdf:resource="http://purl.org/spar/deo"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <AnnotationProperty rdf:about="&dc;rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>
+        <inverseOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">has relation</rdfs:label>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Background -->
+
+    <Class rdf:about="&sci-doc;Background">
+        <rdfs:label rdf:datatype="&xsd;string">Background</rdfs:label>
+        <equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Background"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <disjointWith rdf:resource="&sci-doc;Conclusion"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">Liakata et al. 2008, Liakata, M., Teufel, S., Siddharthan, A., &amp; Batchelor, C. R. (2010, May). Corpora for the Conceptualisation and Zoning of Scientific Papers. In LREC.</rdfs:seeAlso>
+        <dc:description rdf:datatype="&xsd;string">Theoterical information about the domain.
+
+According to the annotation scheme proposed by Liakata et. al 2008, generally accepted background knowledge and previous work  accepted background knowledge and previous work.
+
+According to [DEO] ontology: Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.
+
+</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#CommonGround -->
+
+    <Class rdf:about="&sci-doc;CommonGround">
+        <rdfs:label rdf:datatype="&xsd;string">CommonGround</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;Background"/>
+        <disjointWith rdf:resource="&sci-doc;RelatedWork"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[Teufel 2010] The Structure of Scientific Articles: Applications to Citation Indexing and Summarization
+Simone Teufel (University of Cambridge)
+</rdfs:seeAlso>
+        <dc:description>Knowloedge that is known by everyone in the domain. According to [Teufel 2010] Common Ground is defined as &quot;no knowledge claim raised&quot;.</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Conclusion -->
+
+    <Class rdf:about="&sci-doc;Conclusion">
+        <rdfs:label rdf:datatype="&xsd;string">Conclusion</rdfs:label>
+        <equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Conclusion"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">The most important take-home message of the study.
+
+According to [Liakata 2008], conclusions are statements inferred from observations and results, which support or reject a research hypothesis or summarise the findings of an investigation.</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Contribution -->
+
+    <Class rdf:about="&sci-doc;Contribution">
+        <rdfs:label rdf:datatype="&xsd;string">Contribution</rdfs:label>
+        <equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Contribution"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">Indicates why the work is important.
+
+The Deo ontology [DEO] defines contribution as a description of the part that this publication plays in the overall field.</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Discussion -->
+
+    <Class rdf:about="&sci-doc;Discussion">
+        <rdfs:label>Discussion</rdfs:label>
+        <equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Discussion"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description>As stated in Deo [DEO], discussion is an interpretation of the results obtained and an analysis of their significance, in support of conclusions.</dc:description>
+        <rdfs:seeAlso>[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Experiment -->
+
+    <Class rdf:about="&sci-doc;Experiment">
+        <rdfs:label rdf:datatype="&xsd;string">Experiment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">How the study was structured and how it was carried out (experimental setup, metrics and details)</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#FutureWork -->
+
+    <Class rdf:about="&sci-doc;FutureWork">
+        <rdfs:label rdf:datatype="&xsd;string">FutureWork</rdfs:label>
+        <equivalentClass rdf:resource="http://purl.org/spar/deo/FutureWork"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">The perspective of the work. Suggestions about how to improve the work (own or general)</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Goal -->
+
+    <Class rdf:about="&sci-doc;Goal">
+        <rdfs:label rdf:datatype="&xsd;string">Goal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">According to [Liakata 2008]: A goal of an investigation is the target state of the investigation where intended discoveries are made, approaches are tested, problems are demonstrated, tasks formulated etc.</dc:description>
+        <rdfs:seeAlso>[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Hypothesis -->
+
+    <Class rdf:about="&sci-doc;Hypothesis">
+        <rdfs:label>Hypothesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description>A hypothesis is an educated guess about how things work. A hypothesis should be something that you can test.</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Limitations -->
+
+    <Class rdf:about="&sci-doc;Limitations">
+        <rdfs:label rdf:datatype="&xsd;string">Limitations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;Conclusion"/>
+        <dc:description>Limitations of the author&apos;s work
+</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Method -->
+
+    <Class rdf:about="&sci-doc;Method">
+        <rdfs:label rdf:datatype="&xsd;string">Method</rdfs:label>
+        <equivalentClass rdf:resource="http://purl.org/spar/deo/Methods"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">How the author performed the experiment. Technique/s used to achieve the goal/s.</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Model -->
+
+    <Class rdf:about="&sci-doc;Model">
+        <equivalentClass rdf:resource="http://purl.org/spar/deo/Model"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Motivation -->
+
+    <Class rdf:about="&sci-doc;Motivation">
+        <equivalentClass rdf:resource="http://salt.semanticauthoring.org/ontologies/sro#Motivation"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description>The stimulus for achieving the goal of the investigation, the reason to carry out the investigation [Liakata 2008]</dc:description>
+        <rdfs:seeAlso>[Liakata 2008] Liakata, M., &amp; Soldatova, L. (2008). Guidelines for the annotation of general scientific concepts. Aberystwyth University, JISC Project Report http://ie-repository.jisc.ac.uk/88.</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Observation -->
+
+    <Class rdf:about="&sci-doc;Observation">
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#ProblemStatement -->
+
+    <Class rdf:about="&sci-doc;ProblemStatement">
+        <rdfs:label>ProblemStatement</rdfs:label>
+        <equivalentClass rdf:resource="http://purl.org/spar/deo/ProblemStatement"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">States a specific research question.
+Deo ontology [DEO] defines this class as a concise description of the issues that needed to be addressed by a work described in the document.
+
+</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#RelatedWork -->
+
+    <Class rdf:about="&sci-doc;RelatedWork">
+        <rdfs:label rdf:datatype="&xsd;string">RelatedWork</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&sci-doc;Background"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/RelatedWork"/>
+        <dc:description>Work done by others in the same domain, this includes also the related work of the author&apos;s own work.</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#Result -->
+
+    <Class rdf:about="&sci-doc;Result">
+        <rdfs:label rdf:datatype="&xsd;string">Result</rdfs:label>
+        <equivalentClass rdf:resource="http://purl.org/spar/deo/Results"/>
+        <rdfs:subClassOf rdf:resource="&sci-doc;ScientificDiscourse"/>
+        <dc:description rdf:datatype="&xsd;string">Data collected during experimentation.
+
+According to Deo ontology definition[DEO] : The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">[DEO] Discourse Elements Ontology, http://purl.org/spar/deo</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://purl.org/drinventor/sci-doc#ScientificDiscourse -->
+
+    <Class rdf:about="&sci-doc;ScientificDiscourse">
+        <dc:description rdf:datatype="&xsd;string">Classes related to the scientific discourse elements</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/DiscourseElement -->
+
+    <Class rdf:about="http://purl.org/spar/deo/DiscourseElement">
+        <rdfs:label xml:lang="en">discourse element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment xml:lang="en">An element of a document that carries out a rhetorical function.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/FutureWork -->
+
+    <Class rdf:about="http://purl.org/spar/deo/FutureWork">
+        <rdfs:label xml:lang="en">future work</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A proposal for new investigation to be undertaken in order to continue and advance the work described in the publication.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/Methods -->
+
+    <Class rdf:about="http://purl.org/spar/deo/Methods">
+        <rdfs:label xml:lang="en">methods</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A description in a research paper documenting the specialized methods used in the work described. This description is often combined with a description of the materials used, in a section entitled &apos;Methods and Materials&apos;, &apos;Experimental&apos; or a related term.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/Model -->
+
+    <Class rdf:about="http://purl.org/spar/deo/Model">
+        <rdfs:label xml:lang="en">model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A description of a model used or produced by the work described in the publication.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/ProblemStatement -->
+
+    <Class rdf:about="http://purl.org/spar/deo/ProblemStatement">
+        <rdfs:label xml:lang="en">problem statement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <dc:description xml:lang="en">A concise description of the issues that needed to be addressed by a work described in the document.</dc:description>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/RelatedWork -->
+
+    <Class rdf:about="http://purl.org/spar/deo/RelatedWork">
+        <rdfs:label xml:lang="en">related work</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">The authors&apos; critical review of current knowledge by specific reference to others&apos; work, both in terms of substantive findings and theoretical and methodological contributions to a particular topic. This description is often included within the introduction section.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://purl.org/spar/deo/Results -->
+
+    <Class rdf:about="http://purl.org/spar/deo/Results">
+        <rdfs:label xml:lang="en">results</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">The report of the specific findings of an investigation, given without discussion or conclusion being drawn.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://salt.semanticauthoring.org/ontologies/sro#Background -->
+
+    <Class rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Background">
+        <rdfs:label xml:lang="en">background</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">Presentation of information that is essential for understanding the situation or problem that is the subject of the publication. In a journal article, the background is usually part of the Introduction, but may be present as separated section.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://salt.semanticauthoring.org/ontologies/sro#Conclusion -->
+
+    <Class rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Conclusion">
+        <rdfs:label xml:lang="en">conclusion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A reflection on the preceding text, summarizing the evidence, arguments or premises presented in the document and their logical outcomes. Conclusions are a fundamental feature in academic research publications, and may be included in the Discussion section.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://salt.semanticauthoring.org/ontologies/sro#Contribution -->
+
+    <Class rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Contribution">
+        <rdfs:label xml:lang="en">contribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A description of the part that this publication plays in the overall field.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://salt.semanticauthoring.org/ontologies/sro#Discussion -->
+
+    <Class rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Discussion">
+        <rdfs:label xml:lang="en">discussion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">An interpretation and discussion of the results obtained and an analysis of their significance, in support of conclusions. These conclusions may be part of this discussion or may be included in a separate section of the document.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://salt.semanticauthoring.org/ontologies/sro#Motivation -->
+
+    <Class rdf:about="http://salt.semanticauthoring.org/ontologies/sro#Motivation">
+        <rdfs:label xml:lang="en">motivation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+        <rdfs:comment xml:lang="en">A description of the justification for undertaking the work described in the publication.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&sci-doc;Experiment"/>
+            <rdf:Description rdf:about="&sci-doc;Goal"/>
+            <rdf:Description rdf:about="&sci-doc;Hypothesis"/>
+            <rdf:Description rdf:about="&sci-doc;Result"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
