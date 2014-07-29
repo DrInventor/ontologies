@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/5356/DrInventor/ontologies.png)](http://dx.doi.org/10.5281/zenodo.11078)
+
 DrInventor
 ==========
 
