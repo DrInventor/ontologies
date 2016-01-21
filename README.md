@@ -15,7 +15,7 @@ The scientific discourse ontology is under a <a rel="license" href="http://creat
 
 Citation
 ========
-You can cite this work by referring to the Zenodo DOI: [![DOI](https://zenodo.org/badge/5356/DrInventor/ontologies.png)](http://dx.doi.org/10.5281/zenodo.11078) or by citing the following paper ([Bibtex entry](https://github.com/DrInventor/ontologies/blob/master/citation.bib)): 
+You can cite this work by referring to the Zenodo DOI: [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45075.svg)](http://dx.doi.org/10.5281/zenodo.45075) or by citing the following paper ([Bibtex entry](https://github.com/DrInventor/ontologies/blob/master/citation.bib)): 
 
 Ruiz-Iniesta A., Corcho O. A review of ontologies for describing scholarly and scientific documents. In Proceedings of the 4th Workshop on Semantic Publishing (SePublica2014). May 2014
 
