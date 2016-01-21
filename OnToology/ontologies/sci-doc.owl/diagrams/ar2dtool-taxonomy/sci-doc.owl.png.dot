@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "sci-doc:Background" "sci-doc:Observation" "sci-doc:ScientificDiscourse" "sci-doc:Conclusion" "sci-doc:Contribution" "sci-doc:Result" "sci-doc:Method" "sci-doc:Experiment" "sci-doc:Hypothesis" "sci-doc:Limitations" "sci-doc:Model" "sci-doc:Motivation" "sci-doc:RelatedWork" "sci-doc:FutureWork" "sci-doc:ProblemStatement" "sci-doc:CommonGround" "sci-doc:Discussion" "sci-doc:Goal" ; /*classes style*/
+	"sci-doc:Hypothesis" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Motivation" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Contribution" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Observation" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Model" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Result" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:CommonGround" -> "sci-doc:Background" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Limitations" -> "sci-doc:Conclusion" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Background" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Conclusion" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Method" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:RelatedWork" -> "sci-doc:Background" [ label = "rdfs:subClassOf" ];
+	"sci-doc:ProblemStatement" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Discussion" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:FutureWork" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Experiment" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+	"sci-doc:Goal" -> "sci-doc:ScientificDiscourse" [ label = "rdfs:subClassOf" ];
+
+}
