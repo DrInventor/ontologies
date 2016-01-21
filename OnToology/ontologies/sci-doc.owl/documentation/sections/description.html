@@ -1,2 +1,14 @@
-<h2>3. [Ontology Name] Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<p>Complete description of the ontology: a diagram explaining how the classes are related, examples of usage, etc.</p>
+<h2 ><li id="ont-des">Scientific Discourse Ontology Description</li> <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+					<p>As we stated before, the Sci-Doc ontology aims to model the rhetorical elements of the scientific discourse. In this sense, we follow the corpora proposed by <a href="#liakata2010">[Liakata 2010]</a> in order to annotate the scientific discourse. They propose the use of the next concepts for conceptualize the scientific discourse: hypothesis, motivation, background, goal, experiment, method, result and conclusion. We have extended this model with new classes that are not covered by it. These new classes are: common ground, related work and limitations. Next we explain these new classes.</p>
+
+					<p>The Sci-Doc ontology imports the Deo ontology <a href="#deo">[DEO] </a> due to the Deo ontology provides the vast majority of the classes that are needed to model the scientific discourse. For example,  we use the <a href="##Background" title="http://purl.org/drinventor/sci-doc#Background">Background</a> class to identify what is the essential knowledge for understanding the problem. The class <a href="##Contribution" title="http://purl.org/drinventor/sci-doc#Contribution">Contribution</a> annotates a description of the part that this publication plays in the overall field. Notice that <a href="#deo">[DEO]</a> covers the most relevant rhetorical elements, but we should extend it with some specific classes according to the concrete domain. Specifically we need to add the classes related to the Liakata model that are not covered by the Deo ontology, namely: experiment, goal, hypothesis and observation. Figure 1 shows a schema of the ontology classes.</p>
+
+
+					<p>First, we want to distinguish between the <a href="##CommonGround">common ground</a> (general concepts about the domain) and the <a href="##RelatedWork">related work</a> (other works that cover the same topic). These two concepts are subclasses of the <a href="##Background">background</a> class. Next, a scientific document has goals and at least one hypothesis. These classes are subsclasses of the main class (ScientificDiscourse). Another characteristic in the scientific discourse is the experiment carried out. We have included a class named <a href="##Experiment">Experiment</a> that identify this element. Finally, we consider interesting to point out the limitations of the scientific work, in this sense we have included the class <a href="##Limitations">Limitations</a> (is subclass of <a href="##Conclusion">conclusion</a>) that points out the limitations of the author' work.
+					</p>
+
+					
+					<figure>
+						<img class="onto-img" src="images/figure2.png">
+						<figcaption class="img-caption">Figure 1. Schema of classes with the imported classes from Deo ontology</figcaption>
+					</figure>
