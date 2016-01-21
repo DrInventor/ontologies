@@ -1,0 +1,1330 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doco:  <http://purl.org/spar/doco/> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix sdo:   <http://w3id.org/drinventor/ontologies/sci-doc> .
+
+<:sentence91>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Collisions are handled by collision hulls the position of which is computed by our SDD." .
+
+<:sentence224>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          We used our framework to different types of clothes, as shown on the demonstration video." .
+
+<:sentence139>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Function minimization techniques such as Powell’s method [16] can deal with non-linear functions." .
+
+<:sentence61>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Cloth animation depends on a high number of parameters and therefore a data-driven approach is difficult to adapt." .
+
+<:sentence296>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 175-182, 1999." .
+
+<:sentence109>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        Due to the computational expenses of solving the full numerical system of the physics-based deformation, we seek simplifications by constructing a coarse mesh representation of the garment." .
+
+<:sentence170>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Given a position of neighbors X N,Input as input, the interpolation computes the corresponding X P by a weighted summation of the X P,pre-simulated values, each weight being computed from the Euclidian distance between X N,Input and all the X N,Presimulated values." .
+
+<:sentence31>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The explicit Euler method [ 2 ] has been one of the first numerical solvers." .
+
+<:sentence266>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Both the mass-spring system and collision detection have been rewritten to take advantage of the pre-simulated sequence of the clothes to be animated." .
+
+<:sentence140>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Performance is slightly slower, but only pre-processing performance is affected and not runtime performance." .
+
+<:paper>  a     sdo:ScientificDiscourse , bibo:Article .
+
+<:sentence321>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 20(3), pp." .
+
+<:sentence236>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " While offering high computation speed, the cloth simulator cannot handle some cloth movements such as those appearing during dressing or undressing." .
+
+<:sentence110>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The coarse mesh is used to deduce the gross behavior of the cloth in a data-driven manner, based on the input pre-simulated sequence." .
+
+<:sentence73>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In what follows, we present the chosen optimization strategies as well as the workflow of the method." .
+
+<:sentence206>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Several techniques exist for shape interpolation using examples, such as Radial Basis Functions or parametric interpolation." .
+
+<:sentence182>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " These are built once at the beginning of the simulation (prior to the runtime simulation) after the SDD has been computed on the coarse mesh, using the pre-simulated sequence." .
+
+<:sentence43>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Another approach to fast garment deformations is the hybrid approach." .
+
+<:sentence278>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n      \n      \n        10. References" .
+
+<:sentence152>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The use of SDD for these regions makes it possible to reduce the number of mass points even further." .
+
+<:sentence13>  a  sdo:Hypothesis ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We consider that the gross cloth behavior is driven mainly by two separable contributions: the skeleton-driven movement of the character and the mechanical properties of the cloth." .
+
+<:sentence248>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n        \n          7.3. Variety of clothes" .
+
+<:sentence122>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " • Minimizing the \"shape factor\": Square Root (Surface Area)/Contour Length." .
+
+<:sentence303>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 203-214, 2002." .
+
+<:sentence85>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The cloth-to-joint relation enables us also to optimize collision detection by restricting the collision check to a small area around each vertex of the coarse mesh." .
+
+<:sentence218>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This also keeps the smoothness of the boundaries between patches." .
+
+<:sentence194>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Collision detection is also computed between floating regions and skeleton joints as follows: 16 for each edge e ? Coarse_Mesh do 17 if e ? Floating_Region 18 if Collision(e, body_segment) 19 Collision_Response with body_segment" .
+
+<:sentence2>  a  sdo:Goal ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The idea is to use this analysis to find an optimal combination of physics-based simulation and geometric approximation of the simulator; potentially colliding regions are defined on the cloth such that they will hold true for the skeleton movement that closely matches that of pre-simulated sequence." .
+
+<:sentence55>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Some other methods exploit graphics hardware to compute collisions on bump maps [20]; others use implicit surfaces to check collisions on the body [18], or voxel trees, which partition the space hierarchically [14]." .
+
+<:sentence164>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Frame n ..." .
+
+<:sentence25>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " After demonstrating results and performance in Section 7, we conclude with discussion and future work in Section 8." .
+
+<:sentence134>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          \n            \n            \n            \n            Figure 4. Two examples of segmentation with (a) patches of large (260 cm2), and (b) small surface area (95 cm2). (c) is the coarse mesh corresponding to the segmentation (b). Different colors are randomly assigned to the patches.\n          \n        \n        \n          5.2. Identifying cloth-to-joint relations and region types" .
+
+<:sentence315>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [17] Provot, X., \"Deformation Constraints in a Mass-Spring Model to Describe Rigid Cloth Behavior\", Graphics Interface'95 proceedings, A K Peters, pp 147-154, 1995." .
+
+<:sentence97>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Although developing a new SDD method is not our main goal, the way the skin deforms is important in our framework since natural looking cloth shape also requires natural skin shape." .
+
+<:sentence291>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 1-8, 1999." .
+
+<:sentence104>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "X P,Dress , X P,Dress being the position of P at initial character pose (see [15] for further details on SDD)." .
+
+<:sentence67>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Researchers have concentrated mainly on two aspects of real-time cloth animation: simulating the physical properties of garments and collision handling." .
+
+<:sentence261>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          100 cm in error 10 Simulation 6.34 0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 Joint angle range of the pre-simulated sequence Ratio of Joint angle range of the real-time sequence\n          \n            Figure 16. Estimation of the error when reducing the range of body motion in the pre-simulated sequence.\n          \n          cm 100 in error Simulation 6.34 10 0 20 40 60 80 100 Number of pre-simulated frames\n          \n            Figure 17. Estimation of the error when reducing the number of pre-simulated frames.\n          \n        \n      \n      \n        8. Conclusion" .
+
+<:sentence176>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The positions of the vertices are corrected after every simulation loop." .
+
+<:sentence37>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A major drawback of this numerical solver, however, is the computation of a large linear system, More recently, researchers worked on saving the computation time of the linear system solver." .
+
+<:sentence231>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " However, the method may introduce flaws in simulation for some tight clothes, due to the approximate handling of collision detection." .
+
+<:sentence146>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In our approach, three regions are identified from the residual values of the skin fitting process ( Figure 5(d) ): those that potentially interact with several joints, those that are loosely attached to the skeleton and those that are rigidly attached to the skeleton." .
+
+<:sentence327>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 21(3), ACM Press, pp." .
+
+<:sentence201>  a  sdo:Goal ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Again, the main challenge here is obtaining the highest possible realism while maintaining acceptable computation load, in order to meet the real-time requirements." .
+
+<:sentence116>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " It consists of two following steps: (1) The cloth surface is partitioned into a set of patches as shown in Figure 4(a) and (b)." .
+
+<:sentence79>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Simulation stages Strategies to reduce the computation time Simulating the Simplified mass-spring system gross movements Implicit Euler integrator on the coarse mesh Post-correction to maintain the cloth behaviour closer to the pre-simulated one Collision detection Each vertex is enclosed into a collision hull on the coarse mesh that is rigidly attached to the skeleton Extra collision detection is also computed between the floating regions and the skeleton joints Modelling the cloth Geometric deformation with a linear function details on the fine which coefficients are defined by linear mesh regression on the pre-simulated animation Next, our simulator assumes that the clothes are worn on 3D characters, and that the character movement is the only external force acting upon the cloth." .
+
+<:sentence273>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " By doing so, it may be possible to process collisions on a higher number of objects while maintaining low computation cost." .
+
+<:sentence188>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Note that the collision hulls are generated for loose and floating garment regions only." .
+
+<:sentence49>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Moreover, determining the location and shape of wrinkles is left to CG artists." .
+
+<:sentence243>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                ") 8 8 7 Number of vertices on the rough mesh 110 97 82 Time performance of coarse mesh (fps) 31 63 74 Time performance of the fine mesh (fps) 207 322 588 Overall Performance (fps) 26 51 63" .
+
+<:sentence158>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          Residual Value (cm)\n          \n            \n            \n            \n          \n          Identification of the garment regions Garments rigidly attached to the skeleton through SDD Garments for which the collision detection is made with collision hulls only Garments for which the collision detection is made with collision hulls and a predefined list of potentially colliding joints (d)\n          \n            \n            Figure 5. (a) and (b) influence of the joints on the dress shown in color, (c) quality of the fitting of the SDD data, (d) the three regions computed on an analysis of the residual values.\n          \n          \n            Figure 6. The coarse mesh is computed with both mass-spring system and SDD.\n          \n        \n        \n          5.3. Data-driven post-correction of the coarse mesh" .
+
+<:sentence19>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Second, we use the pre-simulated sequence to approximate the dynamic behavior of the coarse mesh geometrically wherever possible." .
+
+<:sentence80>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " When observing the behavior of garment worn by a character, there are considerable correlations between the body motion and the movement of the garment." .
+
+<:sentence213>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " X P and X N are respectively the position of the vertex x and its neighbors; they are all expressed in the SDD coordinate system of x." .
+
+<:sentence128>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " When the lowest cost exceeds a threshold, the construction of the patch is completed." .
+
+<:sentence309>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 112, 2001." .
+
+<:sentence50>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " One of our contributions is a geometric wrinkling method that is “trained” by using a pre-simulated cloth sequence, rather than relying on users." .
+
+<:sentence285>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [5] Cordier F., Magnenat-Thalmann N., \"Real-time Animation of Dressed Virtual Humans\", Eurographics, Blackwell publishers, Vol." .
+
+<:sentence8>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A number of strategies have been suggested, such as using simplifying assumptions for the physics model and/or collision detection [ 7 ] [12]." .
+
+<:sentence20>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Finally, fine details such as wrinkles are also simulated in a data-driven manner, by using the pre-simulated cloth sequence as examples." .
+
+<:sentence255>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The Figure 16 shows the importance of the variability of the body motion in the pre-simulated sequence." .
+
+<:sentence310>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [15] Mohr A., and Gleicher M., \"Building Efficient, Accurate Character Skins from Examples\", ACM Transactions on Graphics, ACM Press, Vol." .
+
+<:sentence92>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The final mesh is then obtained using the winkle shape interpolator and the computed geometry of the coarse mesh." .
+
+<:sentence225>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " • The “evening” dress ( Figure 14 ) is chosen to demonstrate our wrinkle interpolator on large garment regions." .
+
+<:sentence62>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Very recently, James et al. [10] resented such an approach, where physics-based deformation and collision detection are both handled in a unified framework." .
+
+<:sentence297>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [10] James D. L., Fatahalian K., \"Precomputing Interactive Dynamic Deformable Scenes\", ACM Transactions on Graphics, ACM Press, Vol." .
+
+<:sentence171>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The computation cost of this interpolator grows as the number of pre-simulated frames increases." .
+
+<:sentence32>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unfortunately, this method is notorious for its instability when using large time steps and stiff equations." .
+
+<:sentence267>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Consequently, our cloth simulator is able to construct a model for real-time animation without user intervention and can deal with different types of clothes from tight to floating with low computation consumption." .
+
+<:sentence141>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The fitting results for a dress model are shown in Figure 5 ." .
+
+<:sentence322>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 260-267, 2001." .
+
+<:sentence237>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " More generally, the clothes are unable to interact with objects other than those that have been taken into consideration during the pre-processing phase." .
+
+<:sentence111>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A number of optimization strategies are adopted: The two following sections describe a preprocessing that constructs and segments a coarse mesh representation into different region types." .
+
+<:sentence74>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          3.1. Optimization strategies" .
+
+<:sentence207>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We have used linear interpolation in which coefficients are defined by multi-linear regression on the pre-simulated animation, since it provides satisfactory results at a very low computation cost." .
+
+<:sentence183>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " At each pre-simulated frame, we calculate the difference between the SDD motion model and the presimulated cloth model in the local coordinate system of the SDD." .
+
+<:sentence44>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " They aim for a neat combination of physically based deformation and geometric deformation." .
+
+<:sentence279>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          \n\t\t  [1] Alexa, M., \"Linear Combination of Transformations\", SIGGRAPH 2002 Conference Proceedings, Annual Conference Series, ACM Press, Vol. 21(3), pp. 380-387, 2002. - [2] Baraff D., Witkin, A., \"Large steps in cloth simulation\", ACM Transactions on Graphics, Proceedings of ACM SIGGRAPH, ACM Press, pp." .
+
+<:sentence153>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The pseudo code of the simulation loop is: 1 for each vertex P ? Coarse_Mesh do 2 M SDD ? SDD P (Skeleton_Joint_Angles) 3 if P ? Tight_Region 4 X P ? Mass_Spring_system(time_step) 5 else 6 X P ? M SDD ." .
+
+<:sentence14>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This consideration was partly inspired by the hybrid real-time simulation method proposed in Cordier et al. [ 5 ], where a hybrid deformation method is used to combine dynamic surfaces with Skeleton-Driven Deformation (SDD)." .
+
+<:sentence249>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          As expected, the quality of the simulation depends on the number and variety of examples – the pre-simulated sequence in our case." .
+
+<:sentence123>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The objective is to obtain \"well-shaped patches\", patches that have a circular shape." .
+
+<:sentence304>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [13] Kang Y.-M., Choi J.-H., Cho H.-G., Lee D.-H., \"An efficient animation of wrinkled cloth with approximate implicit integration\", The Visual Computer Journal, Spinger-Verlag, Vol." .
+
+<:sentence86>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Finally, we use the cloth shape of a pre-simulated cloth sequence to correct the physicsbased simulation of the coarse mesh in order to match the original cloth behavior more closely." .
+
+<:sentence219>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Figure 14 illustrates the deformation of the wrinkles." .
+
+<:sentence280>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 43-54, 1998." .
+
+<:sentence195>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          \n            \n          \n          (b) (c)\n          \n            \n            Figure 10. Computation of the collision hull for each cloth patch; (a): residual values of SDD attachment fitting, (b): computation of local cloth displacement, (c): convex hulls covering all displacements, (d): resulting collision hulls.\n          \n          \n            Figure 11. Collision handling using collision hulls (loose and floating regions).\n          \n          \n            Figure 12. Collision handling on floating regions.\n          \n        \n        \n          5.5. Runtime computations" .
+
+<:sentence3>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " At runtime, using these analyses, our simulation process provides both visually pleasing results and performance, as long as the motion of the character remains sufficiently close to the original sequence used for the pre-computation." .
+
+<:sentence56>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Using frame coherency to reduce computation cost has been explored by Zhang et al [23]." .
+
+<:sentence250>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To show that the simulator faithfully recreates the cloth movement used for training, we compared the real-time simulation with the presimulated one in the first video." .
+
+<:sentence165>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Ideally, the local shape (e.g. position of the vertices in relation to their neighbors) should be a blend of those of the pre-simulated animation." .
+
+<:sentence26>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n      \n        2. Previous Work" .
+
+<:sentence220>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        Coarse Mesh Frame\n        N 1\n        \n          \n          \n        \n        Main control point Neighbors Patch of a fine mesh\n        \n          \n          Figure 13. Shape of the patch with respect to the positions of the control point P and its neighbors N1, N2, and N3.\n        \n        \n          \n          Figure 14. The wrinkling interpolator in action: wrinkles in (b) and (d) are generated geometrically with (a) and (c) as input.\n        \n      \n      \n        7. Results and Discussion" .
+
+<:sentence135>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          Next we carry out cloth-to-skin (or body) attachment through skin fitting, by which the skinning data on the cloth mesh are approximated in such a way that the skinning-driven cloth shape best fits the simulated cloth shape throughout the whole pre-simulated sequence." .
+
+<:sentence316>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " - [18] Rudomin, I., Meln, M., \"Multi-Layer Garments Using Hybrid Models\", Visual 2000, Springer, pp." .
+
+<:sentence98>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " There are two requirements which the method should fulfill for this particular use: first, it must overcome the undesirable effect of vertex collapse as shown in Figure 3(a) ." .
+
+<:sentence292>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [possible DOI] [8] Gilbert E. G., Johnson D.W., Keerthi S. S., \"A fast procedure for computing the distance between complex objects in three-dimensional space\", IEEE Journal of Robotics and Automation, IEEE Press, Vol." .
+
+<:sentence105>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Note that the operator is not continuous." .
+
+<:sentence68>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n      \n        3. Overview of our approach" .
+
+<:sentence262>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        The recent advent of cloth simulation techniques has matured enough to produce highly realistic cloth movements on animated characters." .
+
+<:sentence177>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The velocity is updated as well." .
+
+<:sentence38>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Desbrun et al [ 7 ] proposed solving the linear system with a precomputed inverse matrix." .
+
+<:sentence232>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " For some body movements, the skin surface may slightly intersect the cloth surface." .
+
+<:sentence147>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The threshold values are chosen in a way that the coarse mesh deformation remains sufficiently close to the pre-simulated sequence." .
+
+<:sentence328>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 594-603, 2003." .
+
+<:sentence202>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " As recognized in earlier works [9] [13], wrinkles can be efficiently animated with a geometric method as they are geometric in nature." .
+
+<:sentence117>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " (2) A coarse mesh representation is obtained by combining a set of vertices in a patch into a single mass point located at the center." .
+
+<:title>  a     doco:Title ;
+        <http://purl.org/dc/terms/description>
+                "null\n  \n    41fd7b4bbda4ffeea48c3189c9c336cc309391988a1f28ce1389d3f0a6c5e0a4\n    3wxs\n    http://dx.doi.org/10.1111/j.1467-8659.2005.00841.x\n  \n  \n    \n      \n        A Data-driven Approach for Real-Time Clothes Simulation" .
+
+<:sentence274>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We also believe that the precision of the collision detection could be improved by replacing the convex shape by a surface to follows more closely the trajectories of the vertices." .
+
+<:sentence189>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The collision hulls of tight regions are small enough to be approximated by a single point." .
+
+<:sentence244>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          \n            Figure 15. Computation speed.\n          \n          The pre-processing of all the cloth models took less than 10 minutes." .
+
+<:sentence159>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          At each frame of the simulation, we compute the coarse mesh by a mass-spring system with the implicit Euler numerical solver [ 2 ]." .
+
+<:sentence81>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " These correlations are especially clear for some clothes like tight shirts and trousers." .
+
+<:sentence214>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Despite its simplicity, linear interpolation works fairly well provided a sufficient number of pre-simulated frames for the multi-linear regression." .
+
+<:sentence129>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We proceed until no vertices can be found to start a new patch." .
+
+<:sentence190>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Figure 10(d) shows the convex hulls computed for the dress model." .
+
+<:sentence51>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n        \n          2.2. Collision handling" .
+
+<:sentence286>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 21(3), pp 327-336, 2002." .
+
+<:sentence160>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The simulation run on the coarse mesh hardly reproduces the gross movement of the original cloth because the initial mesh has been significantly simplified (from 4000 to a few dozen vertices) and the topology has been modified." .
+
+<:sentence9>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A recent work by James et al. [10] suggests a different approach by adopting a data-driven method." .
+
+<:sentence21>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Subsequently, real-time animation of fully dressed human could be generated, which would be suitable for applications such as games where visual plausibility is more important than accuracy." .
+
+<:sentence256>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The best quality is achieved when the range of the body motion in the presimulated sequence is approximately 30 % larger than the one used in the real-time simulation." .
+
+<:sentence130>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Deciding a good granularity in the coarse mesh is hand-tuned, so that a neat compromise between the simulation quality and the computation load is found." .
+
+<:sentence311>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 22(3), pp." .
+
+<:sentence93>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          Data Process\n          \n            Figure 2. Workflow of our approach.\n          \n        \n      \n      \n        4. Improving the skeleton driven deformation" .
+
+<:sentence226>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " • The “cocktail” dress ( Figure 18 ) is a relatively complex model; the bottom is composed of two layers of tissues and has folds made of large number of vertices, inducing many self collisions." .
+
+<:sentence100>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This is necessary as we want to compute the deformation of the cloth surface in relation to the skin surface." .
+
+<:sentence63>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " By blending of pre-computed orbits rather than using a mass-spring system, previous unseen results could be achieved, such as garments with stiff mechanical properties in real-time." .
+
+<:sentence298>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 22(3), pp." .
+
+<:sentence172>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We wish to keep the computation cost constant regardless of the duration of the pre-simulated sequence." .
+
+<:sentence33>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Several improvements have been proposed to reduce instability, such as the Verlet integration [11] and the explicit Euler combined with inverse dynamics [17] [20]." .
+
+<:sentence268>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " There are many interesting avenues for future work." .
+
+<:sentence142>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Notably, the floating regions (colored in red in Figure 5(d) ) are attached to the root of the character, as shown in Figure 5(b) ; this is contributable to the fact that these regions are large in volume and they rarely collide with limbs during the walk motion." .
+
+<:sentence323>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " - [21] Baraff D., Witkin A. P., Kass M., \"Untangling cloth\", ACM Transaction on Graphics, ACM Press, Vol." .
+
+<:sentence238>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The list of objects that can potentially interact with clothes and the way these objects interact are defined at the preprocessing stage and cannot be changed during the realtime simulation." .
+
+<:sentence112>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We then describe in the next two sections the spring-mass system and collision handling of the coarse mesh at each frame of the simulation." .
+
+<:sentence75>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n           Figure 1 summarizes our strategies for optimizing the cloth simulation." .
+
+<:sentence208>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " For every vertex x in a patch, the interpolator function takes the associated mass point in the coarse mesh, and its neighbors as input." .
+
+<:sentence184>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " After a sweep, we get a set of points that cover the path a patch takes during the simulation." .
+
+<:sentence45>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Cordier et al. [ 5 ] proposed to segment the cloth into pieces and simulate these by different algorithms, depending on how they lie on the body surface and whether they adhere to it or flow over it." .
+
+<:sentence154>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "X D,Dress //Skeleton Driven Deformation High residual values indicate much less dependency on a specific body region of the cloth movement." .
+
+<:sentence15>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unlike that method, however, our method exhibits significantly more efficient and realistic behavior." .
+
+<:sentence124>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " • Obtaining patches of equivalent surface area." .
+
+<:sentence305>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 17(3), pp." .
+
+<:sentence87>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          \n            Figure 1. The chosen strategies to save computation time.\n          \n        \n        \n          3.2. Workflow" .
+
+<:sentence281>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [3] Barber C. B., Dobkin D.P., Huhdanpaa H.T., \"The Quickhull Algorithm for Convex Hulls\", ACM Transactions on Mathematical Software, ACM Press, Vol." .
+
+<:sentence196>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          The real-time computation of global cloth movements is obtained with a mass-spring system together with the collision response and post-correction described above." .
+
+<:sentence4>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The key contributions of this paper are (1) efficient collision handling that prunes out potentially colliding objects by using the off-line simulation sequence as examples; (2) data-driven fix-up process for the coarse mesh simulation that deduces the gross behavior of the cloth; and (3) geometric approximation of the fine mesh deformation, responsible for details in the shape of the cloth such as wrinkles." .
+
+<:sentence57>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In this work, we propose a data-driven collision detection method; we use the pre-simulated sequence to localize the collision checks to neighboring cloth regions that have high probability to collide." .
+
+<:sentence251>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The character walks at a normal pace without any fast movements." .
+
+<:sentence166>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This is achieved by constructing a set of functions of local shape deformation." .
+
+<:sentence27>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          2.1. Numerical solvers" .
+
+<:sentence221>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        We measure and validate the proposed real-time cloth simulation method along three criteria: the variety of clothes to be simulated, the computation speed and the range of body motion in the pre-simulated cloth sequence." .
+
+<:sentence136>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The basic idea is to use the pre-simulated results as examples and find the error-minimizing skin data through optimization." .
+
+<:sentence317>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 118, 2000." .
+
+<:sentence99>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Second, the method must provide an easy way to compute the local coordinate system for each skin vertex." .
+
+<:sentence106>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " It is not defined for a rotation of 2? radians between the matrices to be blended." .
+
+<:sentence293>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 4(2), pp." .
+
+<:sentence69>  a  sdo:Goal ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        The primary focus of this paper is the development of a fast cloth simulator for real-time applications." .
+
+<:sentence263>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " However, real-time simulation has been largely unexplored until now." .
+
+<:sentence178>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Its new value is set to the sum of the original velocity and the velocity due to the modification of the vertex position (line 11 on Figure 9 )." .
+
+<:sentence39>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Kang et al. [12] proposed further optimization with a direct update formula for the positions and velocities of the cloth vertices." .
+
+<:sentence233>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Similarly, the same problem may arise for self-collisions on clothes." .
+
+<:sentence148>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " For example, a false assignment of loose region into tight region would produce elongated deformations instead of slipping garment over the skin, and therefore generate an overly deformed coarse mesh, which is beyond the training data of the wrinkle generator." .
+
+<:sentence329>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n\t\t  \n\t\t  \n      \n    \n  \n" .
+
+<:sentence70>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Dynamic simulation of complex deformable models, however, can easily involve thousands of degrees of freedom." .
+
+<:sentence203>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unlike previous methods, however, our wrinkling function is not hand-drawn, nor geometrically approximated, but rather trained from on the analysis of the pre-simulated sequence." .
+
+<:sentence118>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The generation of a patch starts by finding a vertex that has not yet been attributed to a patch that is already generated." .
+
+<:sentence40>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " As indicated by the authors, these methods are not intended to provide a physically-correct cloth animation." .
+
+<:sentence275>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n      \n      \n        9. Acknowledgements" .
+
+<:sentence10>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " These techniques do not suffice, however, when simulating fully dressed virtual characters in real-time, leaving the topic unexplored." .
+
+<:sentence245>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " All examples run in real-time at approximately 25 to 50 frames per second (fps), with the coarse mesh deformation process taking about 75 % of the total CPU time." .
+
+<:sentence300>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [11] Kacic-Alesic Z., Nordenstam M., Bullock D., \"A practical dynamics system\", ACM SIGGRAPH/Eurographics Symposium on Computer Animation, ACM Press, pp." .
+
+<:sentence82>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In our method we take advantage of these relationships to reduce the computation load on the mass-spring system and collision detection." .
+
+<:sentence215>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A condition of a good working interpolator is that the input (i.e. position of the coarse mesh vertices) should be within the range of the pre-simulated data." .
+
+<:sentence191>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Collision handling at runtime consists of correcting the position of coarse mesh vertices after every simulation step so that they remain inside their respective hulls." .
+
+<:sentence52>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          Collision detection is usually one of the bottlenecks in real-time animation." .
+
+<:sentence287>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [possible DOI] [6] Choi K.-J., Ko H.-S., \"Stable but Responsive Cloth\", ACM Transactions on Graphics, Proceedings of ACM SIGGRAPH 2002, ACM Press, Vol." .
+
+<:sentence161>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Moreover, unlike the simulator used for the pre-simulated cloth sequence, the simplified mass-spring model does not accurately simulate the bending and shearing properties of the fabrics [21]." .
+
+<:sentence22>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The remainder of this paper is organized as follows: We begin by reviewing previous approaches in Section 2." .
+
+<:sentence257>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Our simulator works well for interpolation (i.e. joint angles within the range of those of the pre-simulated sequence) but often fails for extrapolation." .
+
+<:sentence131>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We have found that best simulations are obtained when patch area covers one or two cloth wrinkles." .
+
+<:sentence312>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 165-172, 2003." .
+
+<:sentence94>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        The skeleton-driven deformation (SDD), a classical method for the basic skin deformation is perhaps the most widely used technique in 3D character animation." .
+
+<:sentence227>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " • The “Jeans” outfit is a good example of a model where the SDD based geometric approximation can reduce the number of mass points substantially by simulating only a few regions that contribute significantly to the dynamic behavior." .
+
+<:sentence101>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We found that the classical SDD can be greatly improved by replacing the linear combination of the matrices by the matrix operator defined by Alexa [ 1 ]." .
+
+<:sentence64>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " However, they show little degrees of freedom (DoF) to the clothes under simulation; Instead of resorting to a data-driven approach for the entire simulation, we seek a neat combination of a data-driven approach with the mass-spring system." .
+
+<:sentence299>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 165-172, 2003." .
+
+<:sentence173>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A common solution is to construct a lookup table filled with values pre-simulated by the interpolator on grid sampling." .
+
+<:sentence34>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unfortunately, the simulation quality is sacrificed in favor of computation speed, due to the approximations employed in these models." .
+
+<:sentence269>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " First, the approach could be extended to simulating other physics-based models such as hair and fluid." .
+
+<:sentence143>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The residual values of the fitting provide useful information on how the garments behave in relation to the body." .
+
+<:sentence324>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 22(3), pp." .
+
+<:sentence239>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Finding a method to update the list of possible interacting objects automatically could be a subject for future research." .
+
+<:sentence113>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Also described is the runtime process." .
+
+<:sentence76>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Our simulator is based on two levels of deformation: the first deduces the gross cloth behavior by working on a coarse mesh with a physics-based approach whereas the second generates wrinkles on a fine mesh with a geometric method." .
+
+<:sentence209>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To calculate the position of x from the input, the wrinkle interpolator interpolates the positions of the coarse mesh points, weighted by coefficients determined the regression model of the following form: Error!" .
+
+<:sentence270>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We also believe that the work on collision hulls is promising." .
+
+<:sentence185>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The smallest convex hull that contains all these points is generated for every patch using the “Quickhull” algorithm presented by Barber et al [ 3 ]." .
+
+<:sentence46>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Others have noted that wrinkle deformation is geometric in nature and therefore can be computed with a geometric method." .
+
+<:sentence240>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n        \n          7.2. Variety of clothes" .
+
+<:sentence155>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Therefore, an additional collision check is required to handle the interaction of the clothes with the whole body skeleton." .
+
+<:sentence16>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This effect is achieved by focusing on the analysis of cloth movements in relation to its associated skin surface, and adopting a learning strategy." .
+
+<:sentence210>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Objects cannot be created from editing field codes." .
+
+<:sentence125>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This component gives a cost that increases with the surface area of the patch." .
+
+<:sentence306>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 147-157, 2001." .
+
+<:sentence88>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          An overview of the workflow is given in Figure 2 ." .
+
+<:sentence282>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 22(4), pp." .
+
+<:sentence197>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The runtime computation of the coarse mesh is obtained in the following order: • Mass-spring computation ( Figure 6 ) • Post-correction ( Figure 9 ) • Collision response on hulls ( Figure 11 ) • Collision response on floating garments ( Figure 12 ) Note that the collision response on floating garments comes last to ensure collision avoidance between cloth and body." .
+
+<:sentence5>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n    \n    \n      \n        1. Introduction" .
+
+<:sentence58>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n        \n          2.3. Data-driven approaches" .
+
+<:sentence252>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In the second video, different body movements from those of the training were supplied as input to our realtime simulator and the results are compared with the ones generated with a high quality simulator." .
+
+<:sentence167>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Post-correction is accomplished with a function that evaluates the \"ideal\" position of the vertex given the position of its neighbors connected by the edges." .
+
+<:sentence28>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          Probably the most common technique for simulating the physical properties of clothes is the particle system." .
+
+<:sentence222>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Pre-simulated sequences obtained by the cloth simulator of Volino et al [21] were used in our preprocessing." .
+
+<:sentence137>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " An optimization approach, such as the one presented by Mohr et al [15], could be adopted here." .
+
+<:sentence318>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " - [19] Terzopoulos D., Fleischer K., \"Deformable Models\", The Visual Computer, Springler-Verlag, Vol." .
+
+<:sentence294>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 193-203, 1988." .
+
+<:sentence107>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In practice, such case is rare; in general, the largest angle range does not exceed ? radians." .
+
+<:sentence264>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This paper presents the first report of a practical and efficient method for handling real-time simulation almost automatically." .
+
+<:sentence179>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 7 X’ P ? X P 8 for each vertex P ? Coarse_Mesh do 9 if P ? Tight_Region 10 X P ? F Post (X’ P , M SDD ) 11 V P ? V P + (X’ P – X P ) / time_step" .
+
+<:sentence234>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The deletion of the skin triangles covered by the garment surface can partially correct this drawback." .
+
+<:sentence149>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Similarly, a false assignment of region 3 into region 2 would result in the garment crossing the legs." .
+
+<:sentence71>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " For example, a physics-based simulator would require several minutes to compute one frame of a cloth model worn by a character." .
+
+<:sentence204>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In this work, we choose to represent the wrinkle displacement in the local coordinate system used for SDD." .
+
+<:sentence119>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The patch is then grown by adding neighboring vertices one after the other." .
+
+<:sentence180>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          t 1 t 2 t 3 t 4 t 1 t 3 t 2 t 4 t 1 t 2 t 3 t 4 Simulation before postSimulation after postPre-computed frames correction correction\n          \n            Figure 7. Post-correction of the mass-spring system.\n          \n          Dimension reduction by PCA Construction of the inverse distance weighting interpolator X P =F DD (X N ) Values Lookup table of F Post generated according to a regular grid X N,1 , X N,2 , X N,3 ... X P,1 , X P,2 , X P,3 ...\n          \n            \n            Figure 8. Construction of the lookup table for the datadriven post-correction.\n          \n          \n            Figure 9. Post-correction of the mass-spring system.\n          \n        \n        \n          5.4. Collision hulls" .
+
+<:sentence41>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Our approach to that problem is a data-driven mass-spring system: the simulation is corrected with a set of functions built from the pre-simulated animation." .
+
+<:sentence276>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        This work is supported by the Swiss National Science Foundation (SNSF)." .
+
+<:sentence150>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In practice, values of 0.5 cm and 4.0 cm are used to identify tight regions and floating regions, respectively." .
+
+<:sentence11>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We present a data-driven method for simulating clothes worn by 3D characters in real-time." .
+
+<:sentence246>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " As expected, the duration of the pre- simulated sequence is not a factor of the runtime computation speed." .
+
+<:sentence120>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To select a new vertex into the current patch, we evaluate each neighboring vertex that has not been already assigned to a patch, using a penalty function." .
+
+<:sentence301>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 7-16, 2003." .
+
+<:sentence83>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We first construct the cloth-to-joint relation by analyzing a presimulated sequence of the cloth to be animated." .
+
+<:sentence216>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In other word, the wrinkle interpolator can only work for the input range for which it has been trained." .
+
+<:sentence192>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The algorithm is summarized as follows: 12 for every vertex P ? Coarse_Mesh do 13 if P ? Tight_Region 14 if X p ? Collion_Hull(M SDD ) 15 Collision_Response with Collion_Hull Thus, collision detection returns to computing if the particle is in its associated collision hull (line 14 on Figure 11 ); the Gilbert-Johnson-Keerthi algorithm [ 8 ] is ideally suited to this task." .
+
+<:sentence0>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "null\n  \n    41fd7b4bbda4ffeea48c3189c9c336cc309391988a1f28ce1389d3f0a6c5e0a4\n    3wxs\n    http://dx.doi.org/10.1111/j.1467-8659.2005.00841.x\n  \n  \n    \n      \n        A Data-driven Approach for Real-Time Clothes Simulation\n      \n      \n        \n          Frederic Cordier\n        \n        \n          Nadia Magnenat-Thalmann\n        \n      \n      MIRALab, University of Geneva, 24 rue du General Dufour, CH-1211 Geneva, Switzerland {cordier, thalmann}@miralab.unige.ch\n      A data-driven approach for real-time processing of clothes, particularly suitable for simulating dresses worn by virtual characters, is proposed." .
+
+<:sentence53>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The problem is particularly acute in the case of clothes because these objects are highly deformable." .
+
+<:sentence288>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 21(3), pp." .
+
+<:sentence162>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We approach the problem by modifying the behavior of the mass-spring system through a fix-up process (similar to [14]) where the position and velocity of the coarse mesh vertices are modified in order to maintain the cloth shape as close as possible to the original one ( Figure 7 )." .
+
+<:sentence23>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Section 3 gives an overview, followed by the description of our method for SDD in the Section 4." .
+
+<:sentence258>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The main reason for this limitation is collision detection, which does not allow the clothes to have different locations on the body from those calculated in the pre-simulated sequence; this makes the clothes being attached rigidly to the skeleton." .
+
+<:sentence132>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Note that that each patch is associated with a vertex on the coarse mesh." .
+
+<:sentence313>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [16] Press W. H., Flannery B. P., Teukolsky S. A., and Vetterling, W. T., “Numerical Recipes in C, The art of scientific computing”, Cambridge University Press, pp." .
+
+<:sentence95>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This method works first by assigning a set of joints with weights to each vertex in the character." .
+
+<:sentence228>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Our simulator behaves fairly well on a wide variety of clothes, including those with highly stiff mechanical properties." .
+
+<:sentence102>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The combination of i matrices Mi with their blending weight w i is given by: ? w i log( M i ) M SSD = ? w i ? M i = e i i In the remainder of this paper, we denote the function that returns the SDD matrix of the vertex P by SDD P (), SDD P () taking the joint angles of the skeleton as input." .
+
+<:sentence65>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unlike previous works, our simulator allows a much higher degree of interaction, as it is often needed in animating clothes on moving characters." .
+
+<:sentence174>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In order to reduce the memory usage of the lookup table, the dimension of XN,Pre-simulated was reduced prior to the construction of the interpolator, by Principal Component Analysis [16]." .
+
+<:sentence35>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The implicit Euler method presented by Baraff et al. [ 2 ] performs the computation not by using the derivative at the current time, but the predicted derivative at the next time step." .
+
+<:sentence144>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Intuitively, floating garments such as a skirt, cloth patches may collide with several joints; collisions need to be computed on these regions." .
+
+<:sentence325>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 862-870, 2003." .
+
+<:sentence114>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          5.1. Construction of the coarse mesh ?" .
+
+<:sentence77>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The coarse mesh is generated by simplifying the original cloth mesh through segmentation." .
+
+<:sentence271>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The current mesh model of collision hulls could be replaced by implicit surfaces or voxel maps." .
+
+<:sentence186>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Given enough variation and range of character motion, we expect these hulls to cover the allowable positions of corresponding cloth patches during the runtime simulation." .
+
+<:sentence47>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Wrinkles can be generated either by tessellating the cloth mesh [12] or rendering details on texture using bump mapping [9]." .
+
+<:sentence241>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n           Figure 15 summarizes the performance of our simulator on a 1 GHz Windows PC." .
+
+<:sentence156>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " A list of potentially colliding body patches is defined by selecting those that approach within a certain distance of the floating regions during the pre-simulated cloth sequence." .
+
+<:sentence17>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The idea is to use the analysis of the presimulated sequence to identify the region largely explained by joint movement and to replace the physics based simulation with geometric methods wherever possible." .
+
+<:sentence211>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The values ?, ? P and ? N are the interpolation coefficients." .
+
+<:sentence126>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " By modifying the significance of this component, we can easily control the number of vertices to be simulated with the physically-based deformation (see Figure 4 )." .
+
+<:sentence307>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [14] Meyer M., Debunne G., Desbrun, M., Barr A. H., \"Interactive Animation of Cloth-like Objects in Virtual Reality\", Journal of Visualization and Computer Animation, John Wiley & Sons, Vol." .
+
+<:sentence89>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The pre-processing stage involves generating the coarse mesh, computing the cloth-to-joint relation, and constructing the collision hulls and the interpolation functions for data-driven coarse mesh deformation and wrinkle animation." .
+
+<:sentence283>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 469-483, 1996." .
+
+<:sentence198>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n      \n      \n        6. Generating garment details" .
+
+<:sentence6>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n      \n      The problem of simulating the behavior of clothes is one subject the graphics community has been grappling with since almost two decades ago [19] [21]." .
+
+<:sentence59>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          The idea of building an interpolator from examples or pre-simulated data has proven to be a valuable tool in a variety of areas of CG, e.g. for modeling a variety of human body shapes and for motion synthesis." .
+
+<:sentence253>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To measure the simulation quality, we compared our simulation results with the pre-simulated sequence, using a deformation metric." .
+
+<:sentence168>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " For each vertex, we construct an interpolating function F Post by using a set of (X N,Pre-simulated , X P,Pre-simulated ) pairs extracted from each frame of the pre-simulated sequence, where X N ?R 3 (n: number of neighbors of P) denotes the position of the neighbors and X N ?R 3n the position of the vertex in question." .
+
+<:sentence29>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Simulation process is broken down into calculating the internal forces and solving the system of Partial Differential Equations (PDE)." .
+
+<:sentence90>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Global movements Cloth details (Section 5) (Section 6) Pre-simulated Cloth Animation Sequence Pre-processing Cloth-to-joint Pre-processing relation of the Coarse Coarse Mesh of Pre-processing the Fine Mesh Collision Hulls Mesh Coefficients of the Structure wrinkle interpolator Simulation Detection Collision Data-driven Spring System MassWrinkle Shape Skeleton Coarse Mesh Interpolator Runtime Animation Geometry Fine Mesh Geometry The run-time simulator includes deformation of the coarse mesh using the simplified mass-spring system; a post-correction on the position and velocity of the masspoints is processed in order to approach the pre-simulated cloth behavior." .
+
+<:sentence223>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          7.1. Variety of clothes" .
+
+<:sentence138>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In our case, however, our SDD method is non-linear and therefore the linear regression as adopted by Mohr et al is not beneficial." .
+
+<:sentence319>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 4(6), pp.306-331, 1988." .
+
+<:sentence60>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The basic idea is to build an interpolation space filled with a set of pairs of input parameters and the targeted graphical objects." .
+
+<:sentence295>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [9] Hadap S., Bangarter E., Volino P., Magnenat-Thalmann N., \"Animating Wrinkles on Clothes\", IEEE Visualization '99, San Francisco, USA, IEEE Press, pp." .
+
+<:sentence108>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n          \n          \n          \n          \n          Figure 3. Twisting of 2?3 ? radians: (a) the classical SDD, (b) the modified SDD in our approach and (c) its corresponding coordinate systems.\n        \n      \n      \n        5. Simulation of the gross behavior" .
+
+<:sentence30>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The latter point has attracted much interest in the field of real-time applications, since it requires high computation power." .
+
+<:sentence265>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We used our framework to produce visually pleasing motion of a wide range of clothes." .
+
+<:sentence320>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [20] Vassilev T., Spanlang B., \"Fast Cloth Animation on Walking Avatars\", Eurographics, Blackwell Publishers, Vol." .
+
+<:sentence235>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Note that the cloth simulation is also restricted to clothes worn on bodies." .
+
+<:sentence72>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Simulating large models directly would therefore be computationally impractical." .
+
+<:sentence205>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This makes our wrinkle parameterization invariant of all joints of higher hierarchy than the currently influencing joint." .
+
+<:sentence181>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          To prune unnecessary collision tests, we pre-compute what we term “collision hulls” that exploit the skin-tocloth relation obtained from the pre-simulated sequence." .
+
+<:sentence42>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " By doing so, we bring the deformation of the mass-spring system closer to the original cloth behavior." .
+
+<:sentence277>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Thanks to Marlène Arévalo and Christiane Luible for their design work to the garment models illustrating this paper." .
+
+<:sentence151>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The deformation of tight regions is directly computed with the SDD (line 2 and 6 on Figure 6 )." .
+
+<:sentence12>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To effectively optimize the physics-based deformation, which is the bottleneck of the simulation, we use a coarse representation of the cloth mesh to drive the gross behavior in simulation." .
+
+<:sentence247>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In practice, the performance lowers down at a low rate as the complexity of the collision hulls increases, which tends to be governed by the number of pre-simulated frames (see Section 5.3)." .
+
+<:sentence121>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " To enforce the regularity of coarse mesh, which is one condition for obtaining efficient deformation with the mass-spring system [21], we consider two following components." .
+
+<:sentence302>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [possible DOI] [alternative DOI] [12] Kang Y.-M., Cho H.-G., \"Bilayered Approximate Integration for Rapid and Plausible Animation of Virtual Cloth with Realistic Wrinkles\", Computer Animation 2002, Switzerland, IEEE Press, pp." .
+
+<:sentence84>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We then reduce the number of vertices to be physically simulated by identifying the garment regions in which the shape follows that of the underlying skin." .
+
+<:sentence217>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " This condition is maintained thank to the data-driven post-correction (see Section 5.3)." .
+
+<:sentence193>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We used constrained dynamics [22] to handle the collision response (i.e. modification of position and velocity in response to collision detection) at line 15." .
+
+<:sentence1>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " It starts, prior to realtime simulation, by analyzing cloth behavior in relation to the underlying skeleton movement from a pre-simulated sequence of the cloth obtained using any high quality offline simulators." .
+
+<:sentence54>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Several algorithms have been proposed to process robustly collisions in cloth simulation [21] [22] without reaching real-time performance." .
+
+<:sentence289>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 604-611, 2002." .
+
+<:sentence163>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " X N,Pre-computed X P,Pre-computed Neighbor's positions Vertex positions Frame 1 ..." .
+
+<:sentence24>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The next two sections are dedicated to the simulation of gross behavior and the generation of wrinkles, respectively." .
+
+<:sentence259>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The Figure 17 shows the effect of using motion of different durations (expressed in number of frames) with same joint angle ranges." .
+
+<:sentence133>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We denote the vector position of a vertex P as XP, and the vector position of its neighbors as X N R 3n (n: number of neighbors of P)." .
+
+<:sentence314>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 412-420, 1988." .
+
+<:sentence96>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The location of a vertex is then calculated by a weighted combination of the transformation of the influencing joints." .
+
+<:sentence229>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Figure 18 show the pre-processing and runtime simulation results for the cocktail dress." .
+
+<:sentence290>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [7] Desbrun M., Schröder P., Barr A. H. \"Interactive Animation of Structured Deformable Objects\", In Graphics [possible DOI] [alternative DOI] Interface'99 proceedings, Morgan Kaufmann, pp." .
+
+<:sentence103>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The SDD position of P is simply given by M SDD ." .
+
+<:sentence66>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        \n      \n      The history of research on real-time cloth is relatively recent." .
+
+<:sentence260>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " With less than 70 pre-simulated frames, the real-time simulation loses its quality." .
+
+<:sentence175>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The first three principal components, which describe 95 % of the average variability of the data, are used." .
+
+<:sentence36>  a  sdo:Background ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Unlike explicit Euler integration, the implicit Euler method offers higher stability while using large time-steps and clothes with stiff mechanical properties." .
+
+<:sentence230>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Moreover, performance will increase due to the fact that the smallest number of triangles will be processed for the real-time rendering." .
+
+<:sentence145>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " On the other hand, the local movements of some cloth patches (like underwear) are negligible and these patches can be considered as being attached rigidly to the skeleton." .
+
+<:sentence326>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " - [22] Bridson R., Fedkiw R., Anderson J., \"Robust treatment of collisions, contact and friction for cloth animation\", ACM Transactions on Graphics, vol." .
+
+<:sentence200>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " We continue now to describe the second part of the simulation, by which detailed cloth shape such as wrinkles or folds are depicted." .
+
+<:sentence115>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n          We begin by constructing a coarse representation of the given cloth model that will drive the gross behavior of the simulated garment." .
+
+<:sentence78>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The reason for this choice is to lower the computation time; geometric methods are in general much faster than physically-based ones [9]." .
+
+<:sentence272>  a  sdo:FutureWork ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Therefore, for a cloth vertex, it could be possible to compute several collisions hulls in relation to different objects in the scene and to compute their intersection for real-time collision detection." .
+
+<:sentence187>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " By using collision hulls, collision tests are restricted to a small area around the patch; the overall computation can be significantly reduced in comparison to classical collision detection methods in which collisions are computed between the whole skin and cloth surface." .
+
+<:sentence48>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The main difficulty is defining a fold function that can simulate all kinds of wrinkle patterns." .
+
+<:sentence242>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Evening Jeans Cocktail Dress Outfit Dress Number of faces 2992 2131 1331 Pre-processing time (min." .
+
+<:sentence157>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Apart from the position, our SDD computes the local transformation matrix of the vertices, the simulator to be optimized at least for the two following points: limiting collision checks to a small area around the vertices, and the geometric wrinkling which is processed in the SDD local coordinate system." .
+
+<:sentence18>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " In our approach, the key ingredients of the new technique are associated with different facets of cloth simulation: First, our novel collision detection prunes out unnecessary collision tests by tightly localizing potentially colliding regions through the analysis of the cloth movement in relation to the skeleton." .
+
+<:sentence212>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " They are defined by multi-linear regression on a set of pairs (positions of coarse mesh vertices, fine mesh vertices) extracted from the pre-simulated cloth sequence." .
+
+<:sentence127>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " The vertex with the lowest cost is selected." .
+
+<:sentence308>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " 12(1), pp." .
+
+<:sentence284>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " [4] Burden R. L., Faires J. D., \"Numerical Analysis, Fifth Edition\", PWS Publishing, ISBN 0-534-93219-3, 1993." .
+
+<:sentence199>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "\n        So far we have shown the first part of our simulation, that is, the coarse level simulation." .
+
+<:sentence7>  a  sdo:Contribution ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " Relatively little emphasis has been placed on the separate problem of how to achieve real-time performance in simulating cloth." .
+
+<:sentence254>  a  sdo:Motivation ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " It measures the still shape and movement by the sum of edge length difference and the mass velocity difference over the cloth mesh." .
+
+<:sentence169>  a  sdo:Thing ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                " All these positions are described in the SDD coordinate system of P. The evaluation of the \"ideal\" position is made with the inverse distance weighting on the pre-simulated frames." .
