@@ -6,7 +6,7 @@ DrInventor Ontologies
 Status
 =======
 
-The first version of the scientific discourse ontology (sci-doc) has been already released and published at (http://purl.org/drinventor/sci-doc)
+The first version of the scientific discourse ontology (sci-doc) has been already released and published at (http://w3id.org/drinventor/ontologies)
 
 License
 =======
